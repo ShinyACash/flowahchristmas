@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <link rel="preload" href="Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+    <canvas class="c2"></canvas>
+    <div>
+        <img src="img/kirboo.png" class="kirbo" />
+        <h5 class="head5">My Love Mine All Mine</h5>
+        <div id="heart" class="he"></div>
+    </div>
+    <main>
+        <div class="vignette"></div>
+        <img src="img/DotKOFItreesss.jpg" data-speedx="0.04" data-speedy="0.05" class="parallax bg-img" />
+        <h1 data-speedx="0.009" data-speedy="0.004" class="head1">Merry Christmas!</h1>
+        <h2 data-speedx="0.009" data-speedy="0.004" class="head2">Merry Christmas!</h2>
+        <h4 data-speedx="0.009" data-speedy="0.004" class="head4">Merry Christmas!</h4>
+    </main>
+    <canvas id="snowCanvas" data-speedx="0.1" data-speedy="0.05" class="parallax snowy" width="1920" height="800"></canvas>
+    <div>
+        <h5 class="sd">Scroll Down</h5>
+        <h3 class="revealUp head3">Hey there sweetcheeks</h3>
+        <hr class="revealUp heading">
+        <p1 class="para1">I truly love you so dearly and yea this took me quite a while to make but its nothing much y'know. I wish you a holly jolly Christmas and I wish I could've spent it with you by being next to you but I guess that still has time hehe. Well here are a few reasons why you should choose me as your Christmas gift for the next eternity:</p1>
+        <p2 class="para2">1. Rizz since childhood and has Masters in Quantum Rizzics with papers published on research about Einstein's Photo-Elecrizz Effect.</p2>
+        <div class="container"></div>
+        <div class="container1"></div>
+        <img src="img/pic1.png" class="pic1" />
+        <p3 class="para3">2. Really cool and creative asf! Will make lots of creative gifts for you like these with as much effort as he can give!</p3>
+        <img src="img/cool.png" id="btn3" class="pic2" />
+        <div class="container2"></div>
+        <p4 class="para4">3. Rare asl, won't find anywhere else! A rather stereotypical INFJ male which is VERY hard to find. Only about 0.5-1% of males in this world are INFJ. (But I'm still one in 8 billion.)</p4>
+        <img src="img/infj.png" class="pic3" />
+        <div class="container3"></div>
+        <p5 class="para5">4. Hopefully a future IITian about whom you can flex around! Parents will accept him as your fiancé wholeheartedly. Will win them over for you too.</p5>
+        <img src="img/smiley.png" class="pic4" />
+        <div class="container4"></div>
+        <p6 class="para6">5. Loyal and shows black cat behaviour! He will still become a toddler for you 'cause you have some sort of magic apparently but promises to be there for you always. </p6>
+        <img src="img/cat.jpg" class="pic5" />
+        <p7 class="para7">These are just 5 reasons but I could name a lot more if you'd like lmso. Also Psst, I have hidden 3 buttons on this website with the three magic words. If you find them all, you'll get a reward!</p7>
+        <div data-speedx="0.04" data-speedy="0.05" class="parallax container5"></div>
+        <button id="btn1" class="button1">
+            <span class="button_top">
+                Click Here
+            </span>
+        </button>
+        <canvas class="c3"></canvas>
+        <p8 class="para8">There's one right above, click it! The other two you needa find yourself though.</p8>
+        <p9 id="m1" class="msg1">i</p9>
+        <p10 id="m2" class="msg2">love</p10>
+        <p11 id="m3" class="msg3">you</p11>
+
+    </div>
+    <canvas class="c1"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="img/app.js"></script>
+    <script src="img/snow.js"></script>
+    <script>
+        window.onload = _snowCanvas({
+            el: document.getElementById("snowCanvas"),
+            maxSpeed: 4,
+            minSpeed: 1,
+            width: "",
+            height: "",
+            amount: 150,
+            rMax: 7,
+            rMin: 1
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;600;700&display=swap');
+
+
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 5vw;
+}

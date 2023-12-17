@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('Mona-Sans.woff2') format('woff2 supports variations'), url('Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+
+html {
+    font-family: 'Mona Sans';
+}
+
+
+
+body {
+    background-color: black;
+    background-repeat:repeat-x;
+    overflow-x: hidden;
+}
+
+
+canvas {
+    position:relative;
+    overflow:hidden;
+    z-index: 1000;
+    background: none;
+}
+
+.snowy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+
+.sd {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5vh;
+    position: absolute;
+    top: 74%;
+    left: 8%;
+    color:  white;
+    rotate: -8deg;
+}
+
+.c1 {
+    width: 101.5vw;
+    height: 305vh;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    top: 85%;
+    left: -1%;
+    z-index: 5;
+    border-radius: 47px;
+    background: rgb(254, 250, 224);
+}
+
+.c2 {
+    width: 101vw;
+    height: 10vh;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    left: -1%;
+    top: -2%;
+    z-index: 1000;
+    background: rgb(254, 250, 224);
+}
+
+.c3 {
+    width: 101vw;
+    height: 20vh;
+    position: absolute;
+    top: 415%;
+    backdrop-filter: blur(5px);
+    left: -1%;
+    z-index: 1000;
+    background: rgb(185, 148, 112);
+}
+
+
+.kirbo {
+    position: fixed;
+    width: 5vw;
+    top: -0.9%;
+    left: 1vw;
+    z-index: 1000;
+}
+
+h5 {
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 3vh;
+    position: fixed;
+    top: -3%;
+    left: 6%;
+    z-index: 1000;
+    pointer-events: none;
+    color: rgb(185, 148, 112);
+}
+
+
+hr {
+    color: rgb(95, 111, 82);
+    opacity: 0;
+}
+
+hr.heading {
+    text-align: center;
+    position: absolute;
+    top: 96%;
+    height: 2px;
+    width: 11.5%;
+    background: rgb(95, 111, 82);
+    left: 44.5%;
+    border-radius: 50px;
+    z-index: 6;
+}
+
+.para1 {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 13%;
+    width: 75%;
+    color: rgb(130, 138, 102);
+    z-index: 6;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 4vh;
+}
+
+.para2 {
+    text-align: left;
+    position: absolute;
+    top: 150%;
+    left: 8%;
+    width: 64%;
+    color: rgb(163, 129, 97);
+    z-index: 6;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 5vh;
+}
+
+.para3 {
+    text-align: left;
+    position: absolute;
+    top: 191%;
+    right: 8%;
+    width: 64%;
+    color: rgb(163, 129, 97);
+    z-index: 6;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 5vh;
+}
+
+.para4 {
+    text-align: left;
+    position: absolute;
+    top: 232%;
+    left: 8%;
+    width: 64%;
+    color: rgb(163, 129, 97);
+    z-index: 6;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 5vh;
+}
+
+.para5 {
+    text-align: left;
+    position: absolute;
+    top: 280%;
+    right: 8%;
+    width: 64%;
+    color: rgb(163, 129, 97);
+    z-index: 6;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 5vh;
+}
+
+.para6 {
+    text-align: left;
+    position: absolute;
+    top: 328%;
+    left: 8%;
+    width: 64%;
+    color: rgb(163, 129, 97);
+    z-index: 6;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 5vh;
+}
+
+.para7 {
+    text-align: center;
+    position: absolute;
+    top: 365%;
+    left: 13%;
+    width: 75%;
+    color: rgb(130, 138, 102);
+    z-index: 6;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 4vh;
+}
+
+.para8 {
+    text-align: center;
+    position: absolute;
+    top: 420%;
+    left: 13%;
+    width: 75%;
+    color: rgb(254, 250, 224);
+    z-index: 1001;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 4vh;
+}
+
+.pic1 {
+    position: absolute;
+    top: 137%;
+    right: 10%;
+    width: 30vh;
+    z-index: 6;
+}
+
+.pic2 {
+    position: absolute;
+    top: 191%;
+    left: 5%;
+    cursor: pointer;
+    width: 30vh;
+    z-index: 6;
+}
+
+.pic3 {
+    position: absolute;
+    top: 230%;
+    right: 8%;
+    width: 37vh;
+    z-index: 6;
+}
+
+.pic4 {
+    position: absolute;
+    top: 278%;
+    left: 5%;
+    width: 30vh;
+    z-index: 6;
+}
+
+.pic5 {
+    position: absolute;
+    top: 329%;
+    right: 8%;
+    width: 37vh;
+    z-index: 6;
+}
+
+h3 {
+    font-family: 'Kalnia', serif;
+    font-weight: 500;
+    font-size: 6vh;
+    position: absolute;
+    top: 82%;
+    left: 32%;
+    z-index: 6;
+    opacity: 0;
+    pointer-events: none;
+    color: rgb(95, 111, 82);
+}
+    
+
+main {
+    position: relative;
+    top: -20px;
+    left: -20px;
+    height: 110vh;
+    width: 110vw;
+    overflow: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99)
+}
+
+.bg-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right:50%;
+    z-index: 1;
+    background-repeat: repeat-x;
+}
+
+.head1 {
+    position: absolute;
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 9vh;
+    font-weight: 800;
+    font-stretch: 120%;
+    color: rgb(249, 232, 217);
+    top: 30%;
+    left: 27.25%;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.head2 {
+    position: absolute;
+    font-family: 'Mona Sans';
+    font-size: 9.1vh;
+    font-weight: 700;
+    font-stretch: 120%;
+    color: rgb(185, 148, 112);
+    top: 29.5%;
+    left: 27.5%;
+    backdrop-filter: blur(3px);
+    border-radius: 10vh;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.head4 {
+    position: absolute;
+    font-family: 'Mona Sans';
+    font-size: 9.1vh;
+    font-weight: 700;
+    font-stretch: 120%;
+    color: rgb(185, 148, 112);
+    top: 24.85%;
+    left: 27.5%;
+    border-radius: 10vh;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+
+.msg1 {
+    z-index: 1001;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 4vh;
+    color: darkslategrey;
+    opacity: 0;
+    transition: 0.4s linear;
+    position: absolute;
+    top: 408%;
+    left: 48.5%;
+}
+
+.msg2 {
+    z-index: 1001;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 4vh;
+    color: darkslategrey;
+    opacity: 0;
+    transition: 0.4s linear;
+    position: fixed;
+    top: 3%;
+    left: 27%;
+}
+
+.msg3 {
+    z-index: 1001;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    font-size: 4vh;
+    color: darkslategrey;
+    opacity: 0;
+    transition: 0.4s linear;
+    position: absolute;
+    top: 200%;
+    left: 18%;
+}
+
+@keyframes ApDp {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#heart {
+  position: fixed;
+    top: 1.85%;
+    left: 24.75%;
+    height: 31px;
+    margin-top: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#heart::before, #heart::after {
+  content: "";
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 25px;
+    border-radius: 59px 50px 0 0;
+    background: rgb(185, 148, 112);
+}
+
+#heart::before {
+  left: 15px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.container {
+    position: absolute;
+    z-index: 6;
+    top: 135%;
+    width: 101%;
+    left: -1%;
+    height: 12vh;
+    --s: 60px;
+    --c1: #BBAB8C;
+    --c2: #DED0B6;
+    --_g: radial-gradient( 25% 25% at 25% 25%, var(--c1) 99%, rgba(0, 0, 0, 0) 101% );
+    background: var(--_g) var(--s) var(--s) / calc(2 * var(--s)) calc(2 * var(--s)), var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)), radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) var(--s), repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%) calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
+}
+
+.container1 {
+    position: absolute;
+    z-index: 6;
+    top: 175%;
+    width: 101%;
+    left: -1%;
+    height: 12vh;
+    --s: 60px;
+    --c1: #BBAB8C;
+    --c2: #DED0B6;
+    --_g: radial-gradient( 25% 25% at 25% 25%, var(--c1) 99%, rgba(0, 0, 0, 0) 101% );
+    background: var(--_g) var(--s) var(--s) / calc(2 * var(--s)) calc(2 * var(--s)), var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)), radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) var(--s), repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%) calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
+}
+
+.container2 {
+    position: absolute;
+    z-index: 6;
+    top: 216%;
+    width: 101%;
+    left: -1%;
+    height: 12vh;
+    --s: 60px;
+    --c1: #BBAB8C;
+    --c2: #DED0B6;
+    --_g: radial-gradient( 25% 25% at 25% 25%, var(--c1) 99%, rgba(0, 0, 0, 0) 101% );
+    background: var(--_g) var(--s) var(--s) / calc(2 * var(--s)) calc(2 * var(--s)), var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)), radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) var(--s), repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%) calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
+}
+
+.container3 {
+    position: absolute;
+    z-index: 6;
+    top: 264%;
+    width: 101%;
+    left: -1%;
+    height: 12vh;
+    --s: 60px;
+    --c1: #BBAB8C;
+    --c2: #DED0B6;
+    --_g: radial-gradient( 25% 25% at 25% 25%, var(--c1) 99%, rgba(0, 0, 0, 0) 101% );
+    background: var(--_g) var(--s) var(--s) / calc(2 * var(--s)) calc(2 * var(--s)), var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)), radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) var(--s), repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%) calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
+}
+
+.container4 {
+    position: absolute;
+    z-index: 6;
+    top: 311.5%;
+    width: 101%;
+    left: -1%;
+    height: 12vh;
+    --s: 60px;
+    --c1: #BBAB8C;
+    --c2: #DED0B6;
+    --_g: radial-gradient( 25% 25% at 25% 25%, var(--c1) 99%, rgba(0, 0, 0, 0) 101% );
+    background: var(--_g) var(--s) var(--s) / calc(2 * var(--s)) calc(2 * var(--s)), var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)), radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) var(--s), repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%) calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
+}
+
+.container5 {
+    width: 110%;
+    height: 40vh;
+    --s: 140px;
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    --_g: #0000 52%, rgb(254, 250, 224) /* first color */ 54% 57%, #0000 59%;
+    background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s) / 2), radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s) / 2) 0, radial-gradient(farthest-side at 133.33% 50%, var(--_g)), radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #B99470; /* second color */
+    background-size: calc(var(--s) / 4.667) var(--s), var(--s) calc(var(--s) / 4.667);
+}
+
+
+.button1 {
+    --button_radius: 0.75em;
+    --button_color: rgb(254, 250, 224);
+    --button_outline_color: #000000;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    max-width: 8vw;
+    z-index: 6;
+    position: absolute;
+    top: 400%;
+    left: 45%;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+
+.button1 .button_top {
+    display: block;
+    position: relative;
+    left: -4%;
+    min-width: 8vw;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+.button1:hover .button_top {
+    transform: translateY(-0.33em);
+}
+
+.button1:active .button_top {
+    transform: translateY(0);
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.00);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(251, 251, 251);
+    border-radius: 10px;
+}
