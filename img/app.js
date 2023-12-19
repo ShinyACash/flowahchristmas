@@ -2,7 +2,9 @@
 
 let xValue = 0,
     yValue = 0,
-    btncount = 0;
+    btncount = 0,
+    btn2 = false,
+    btn3= false;
 
 gsap.registerPlugin(ScrollTrigger);
 // REVEAL //
@@ -80,18 +82,23 @@ document.getElementById('btn1').addEventListener("click", function () {
 document.getElementById('heart').addEventListener("click", function () {
     document.getElementById('m2').style.animation = "ApDp 5s linear";
     btncount += 1;
+    btn2 = true;
     checkbtn();
 });
 
 document.getElementById('btn3').addEventListener("click", function () {
     document.getElementById('m3').style.animation = "ApDp 5s linear";
     btncount += 1;
+    btn3 = true;
     checkbtn();
 });
 
 
 function checkbtn() {
-    if (btncount === 3) {
+    if (btn2 === false) return;
+    if (btn3 === false) return;
+
+    if (btncount >= 3) {
         console.log("true");
         window.location.href = "https://open.spotify.com/playlist/1mFKrRnsXtCtttD8sDG5xT";
         return true;
