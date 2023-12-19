@@ -1,5 +1,4 @@
 ﻿const parallax_el = document.querySelectorAll(".parallax");
-
 let xValue = 0,
     yValue = 0,
     btncount = 0,
@@ -48,7 +47,6 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
         }
     });
 });
-
 function update(cursorPointer) {
     parallax_el.forEach((el) => {
         let speedx = el.dataset.speedx;
@@ -61,9 +59,7 @@ function update(cursorPointer) {
     });
 
 }
-
 update(0)
-
 window.addEventListener("mousemove", (e) => {
     xValue = e.clientX - window.innerWidth / 2;
     yValue = e.clientY - window.innerHeight / 2;
@@ -71,29 +67,22 @@ window.addEventListener("mousemove", (e) => {
 
     update(e.clientX);
 });
-
-
-
 document.getElementById('btn1').addEventListener("click", function () {
     document.getElementById('m1').style.animation = "ApDp 5s linear";
     btncount += 1;
 });
-
 document.getElementById('heart').addEventListener("click", function () {
     document.getElementById('m2').style.animation = "ApDp 5s linear";
     btncount += 1;
     btn2 = true;
     checkbtn();
 });
-
 document.getElementById('btn3').addEventListener("click", function () {
     document.getElementById('m3').style.animation = "ApDp 5s linear";
     btncount += 1;
     btn3 = true;
     checkbtn();
 });
-
-
 function checkbtn() {
     if (btn2 === false) return;
     if (btn3 === false) return;
@@ -108,9 +97,6 @@ function checkbtn() {
     }
 
 }
-
-
-
 function detecDevice() {
     let device = false;
 
